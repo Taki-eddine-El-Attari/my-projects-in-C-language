@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1690732421 source:c:\users\jassire\desktop\exercices youtube\exercice 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+

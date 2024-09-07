@@ -16,12 +16,12 @@ int main()
         printf("Choisir le nombre de l'opperation que vous voullez : ");
         scanf("%d",&N);
         switch(N){
-           case 1: printf("Donner la valeur du premier terme ");
+           case 1: printf("Put the value of the first term ");
                    scanf("%f",&P);
-                   printf("Donner la valeur du deuxieme terme ");
+                   printf("Put the value of the second term ");
                    scanf("%f",&D);
                    T=P+D;
-                   printf("La sommation vaut : %4f \n",T);
+                   printf("the sum worth : %4f \n",T);
                    break;
 
            case 2: printf("Donner la valeur du premier terme ");

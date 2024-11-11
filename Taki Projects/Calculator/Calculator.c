@@ -6,14 +6,14 @@ int main()
     int N,i,R1,R2;
     float P,D,T;
     do{
-        printf("---- Calculatrice: MENU ---- \n");
+        printf("---- Calculator : MENU ---- \n");
         printf("1_ Addition\n");
-        printf("2_ Soustraction\n");
+        printf("2_ Subtraction\n");
         printf("3_ Multiplication\n");
         printf("4_ Division\n");
-        printf("5_ reste d'une division entier\n");
-        printf("6_ Puissance\n");
-        printf("Choisir le nombre de l'opperation que vous voullez : ");
+        printf("5_ Remainder of an integer division\n");
+        printf("6_ Power\n");
+        printf("Choose the number of the operation you want : ");
         scanf("%d",&N);
         switch(N){
            case 1: printf("Put the value of the first term ");
@@ -21,61 +21,61 @@ int main()
                    printf("Put the value of the second term ");
                    scanf("%f",&D);
                    T=P+D;
-                   printf("the sum worth : %4f \n",T);
+                   printf("the sum is : %4f \n",T);
                    break;
 
-           case 2: printf("Donner la valeur du premier terme ");
+           case 2: printf("Put the value of the first term ");
                    scanf("%f",&P);
-                   printf("Donner la valeur du deuxieme terme ");
+                   printf("Put the value of the second term ");
                    scanf("%f",&D);
                    T=P-D;
-                   printf("La soustraction vaut : %.2f \n",T);
+                   printf("The subtraction is : %.2f \n",T);
                    break;
 
-           case 3: printf("Donner la valeur du premier terme ");
+           case 3: printf("Put the value of the first term ");
                    scanf("%f",&P);
-                   printf("Donner la valeur du deuxieme terme ");
+                   printf("Put the value of the second term ");
                    scanf("%f",&D);
                    T=P*D;
-                   printf("La multiplication vaut : %.2f \n",T);
+                   printf("The multiplication is : %.2f \n",T);
                    break;
 
-           case 4: printf("Donner la valeur du numerateur ");
+           case 4: printf("Put the value of the numerator ");
                    scanf("%f",&P);
                    do{
-                   printf("Donner la valeur du denominateur non nul ");
+                   printf("Put the value of the non-zero denominator ");
                    scanf("%f",&D);
                    }while(D==0);
                    T=P/D;
-                   printf("La Division de %f sur %f vaut : %.2f \n",P,D,T);
+                   printf("The division of %f by %f equals: %.2f \n",P,D,T);
                    break;
 
-           case 5: printf("Donner la valeur du numerateur ");
+           case 5: printf("Put the value of the numerator ");
                    scanf("%d",&R1);
                    do{
-                   printf("Donner la valeur du denominateur non nul ");
+                   printf("Put the value of the non-zero denominator ");
                    scanf("%d",&R2);
                    }while(R2==0);
                    T=R1%R2;
-                   printf("Le reste de la division de %d sur %d vaut : %.2f \n",R1,R2,T);
+                   printf("The remainder of the division of %d by %d is: %.2f \n",R1,R2,T);
                    break;
 
-           case 6: printf("Donner la valeur du nombre ");
+           case 6: printf("Put the value of the base ");
                    scanf("%f",&P);
-                   printf("Donner la valeur de la puissance ");
+                   printf("Put the value of the exponent ");
                    scanf("%f",&D);
                    if(P==0 && D==0)
                     printf("ERREUR 404 \n");
                    else{
                    T=pow(P,D);
-                   printf("%f a la puissance %f vaut : %.2f \n",P,D,T);}
+                   printf("%f to the power of %f equals: %.2f \n",P,D,T);}
                    break;
 
-           default: printf("Vous n'avez pas choisis un nombre entre 1 et 6 \n");
+           default: printf("You didn't choose a number between 1 and 6. \n");
 
 
 
-        }printf("Voullez vous continuer a utiliser la calculatrice ? oui=1 ");
+        }printf("Do you want to continue using the calculator? yes=1 ");
         scanf("%d",&i);
         printf("\n");
 
